@@ -39,6 +39,7 @@ export default (state=intialState, action) => {
     let productSelected = "";
     switch(action.type){
         case ADD_PRODUCT_BASKET:
+            debugger;
             productSelected = {...state.products[action.payload]}
             productSelected.numbers +=1;
             productSelected.inCart = true;
@@ -53,6 +54,7 @@ export default (state=intialState, action) => {
                 }
             }
         case GET_NUMBERS_BASKET:
+            debugger;
             return {
                 ...state
             }
